@@ -1,50 +1,56 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT
+Version: Initial -> 1.0.0
+Change Type: MAJOR (Initial Ratification)
+
+Modified Principles:
+- Defined: I. Static & Secure Architecture
+- Defined: II. Visual Elegance & Experience
+- Defined: III. Security by Design
+- Defined: IV. Content-Driven
+
+Added Sections:
+- Technology Stack
+- Quality & Deployment
+
+Templates Status:
+- .specify/templates/plan-template.md: ✅ Compatible
+- .specify/templates/spec-template.md: ✅ Compatible
+- .specify/templates/tasks-template.md: ✅ Compatible
+
+Follow-up TODOs:
+- None
+-->
+# CQube Solutions Website Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Static & Secure Architecture
+The website MUST be architected as a static site (JAMstack). All pages MUST be pre-rendered at build time. No dynamic server-side rendering (SSR) is permitted on the serving layer. This ensures maximum performance and minimizes the attack surface.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Visual Elegance & Experience
+Design MUST be "elegant"—prioritizing clean layout, consistent typography, and smooth, purposeful animations. The site MUST be fully responsive (mobile-first). Accessibility (WCAG 2.1 AA) is a non-negotiable component of elegance.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Security by Design
+Security is paramount. A strict Content Security Policy (CSP) MUST be implemented. Dependencies MUST be minimized, pinned, and regularly scanned. No sensitive data or credentials shall be stored in the client-side code.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Content-Driven
+Content structure MUST be separated from presentation. Semantic HTML MUST be used to ensure SEO visibility and accessibility. The site structure should intuitively guide the user to information about CQube Solutions.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Technology Stack
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+- **Core**: React (via Next.js Static Export or Vite) or Astro.
+- **Styling**: Tailwind CSS (or CSS-in-JS) for consistent, maintainable design systems.
+- **Deployment**: Static hosting (e.g., Vercel, Netlify, AWS S3+CloudFront).
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Quality & Deployment
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- **CI/CD**: Automated pipelines MUST run linting, type checking, and build verification on every commit.
+- **Performance**: Lighthouse performance scores SHOULD exceed 90 across all categories.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution supersedes all other practices. Amendments require a Pull Request with justification and team approval.
+Versioning follows Semantic Versioning (SemVer 2.0.0).
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-03
