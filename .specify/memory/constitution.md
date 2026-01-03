@@ -1,10 +1,10 @@
 <!--
 SYNC IMPACT REPORT
-Version: 1.1.0 -> 0.0.2
-Change Type: PATCH (Manual version reset)
+Version: 0.0.2 -> 0.0.3
+Change Type: PATCH (Added specific tech stack requirements)
 
 Modified Principles:
-- None
+- Updated: Technology Stack (React, Node.js, TypeScript)
 
 Added Sections:
 - None
@@ -41,8 +41,10 @@ The project MUST be able to be run locally from a developer's machine with minim
 
 ## Technology Stack
 
-- **Core**: React (via Next.js Static Export or Vite) or Astro.
-- **Styling**: Tailwind CSS (or CSS-in-JS) for consistent, maintainable design systems.
+- **Core**: React with TypeScript.
+- **Environment**: Node.js.
+- **Framework**: Next.js (Static Export) or Vite.
+- **Styling**: Tailwind CSS for consistent, maintainable design systems.
 - **Deployment**: Static hosting (e.g., Vercel, Netlify, AWS S3+CloudFront).
 
 ## Quality & Deployment
@@ -55,4 +57,4 @@ The project MUST be able to be run locally from a developer's machine with minim
 This Constitution supersedes all other practices. Amendments require a Pull Request with justification and team approval.
 Versioning follows Semantic Versioning (SemVer 2.0.0).
 
-**Version**: 0.0.2 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-03
+**Version**: 0.0.3 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-03
