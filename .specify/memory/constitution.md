@@ -1,17 +1,13 @@
 <!--
 SYNC IMPACT REPORT
-Version: Initial -> 1.0.0
-Change Type: MAJOR (Initial Ratification)
+Version: 1.1.0 -> 0.0.2
+Change Type: PATCH (Manual version reset)
 
 Modified Principles:
-- Defined: I. Static & Secure Architecture
-- Defined: II. Visual Elegance & Experience
-- Defined: III. Security by Design
-- Defined: IV. Content-Driven
+- None
 
 Added Sections:
-- Technology Stack
-- Quality & Deployment
+- None
 
 Templates Status:
 - .specify/templates/plan-template.md: ✅ Compatible
@@ -37,6 +33,12 @@ Security is paramount. A strict Content Security Policy (CSP) MUST be implemente
 ### IV. Content-Driven
 Content structure MUST be separated from presentation. Semantic HTML MUST be used to ensure SEO visibility and accessibility. The site structure should intuitively guide the user to information about CQube Solutions.
 
+### V. Test Coverage
+All code MUST be covered by automated tests. This includes unit tests for logic and integration/end-to-end tests for critical user journeys. No feature is considered complete without passing tests.
+
+### VI. Local Portability
+The project MUST be able to be run locally from a developer's machine with minimal setup. Documentation (e.g., `README.md`) must provide clear instructions for local execution. All dependencies must be manageable via standard package managers.
+
 ## Technology Stack
 
 - **Core**: React (via Next.js Static Export or Vite) or Astro.
@@ -53,4 +55,4 @@ Content structure MUST be separated from presentation. Semantic HTML MUST be use
 This Constitution supersedes all other practices. Amendments require a Pull Request with justification and team approval.
 Versioning follows Semantic Versioning (SemVer 2.0.0).
 
-**Version**: 1.0.0 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-03
+**Version**: 0.0.2 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-03
